@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="styles/globais.css">
 </head>
 <body>
-    <div class="navbar">
+    <div class="navbar show-menu">
         <div class="header-inner-content">
             <h1 class="logo">BLUE <span>STORE</span></h1>
             <nav>
@@ -39,5 +39,12 @@
         </div>
         </div>
     </header>
-</body>
+    <script>
+        const navbar = document.querySelector(".navbar");
+        const menuButton= document.querySelector(".menu-butoon");
+
+        menuButton.addEventListener('click', () => {
+            navbar.classList.toggle("show-menu");
+        });
+    </script>
 </html>
