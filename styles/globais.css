@@ -194,3 +194,35 @@ header{
     grid-template-columns: repeat(3, 1fr);
     gap: 3rem;
 }
+
+.cols-3 img{
+    max-width: 100%;
+}
+
+.cols-4{
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+}
+
+.cols>*{
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.cols>*:hover{
+    transform: translateY(-5px);
+}
+
+.section-title{
+    text-align: center;
+    margin-top: 4rem;
+    font-size: 1.8rem;
+}
+
+.subtitle-underline{
+    width: 100px;
+    height: 5px;
+    background: #004c94;
+    border-radius: 9999px;
+    margin: 8px auto 0 auto;
+}
