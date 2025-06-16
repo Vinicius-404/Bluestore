@@ -175,8 +175,12 @@ header{
 
 /*conteudo principal*/
 
+main{
+    background-color: #ebebeb;
+}
+
 .gray-background{
-    background-color: #2c2c2c;
+    background-color: #202020;
 }
 
 .page-inner-content{
@@ -196,6 +200,9 @@ header{
 }
 
 .cols-3 img{
+    max-width: 100%;
+}
+.cols-4 img{
     max-width: 100%;
 }
 
@@ -225,4 +232,37 @@ header{
     background: #004c94;
     border-radius: 9999px;
     margin: 8px auto 0 auto;
+}
+
+
+.produtos{
+    color: #2c2c2c;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.produtos-nome{
+    font-weight: 600;
+    margin-top: 0.4;
+}
+
+.rate{
+    color: #0084ff;
+    font-size: 1.3rem;
+}
+
+.produtos-price span{
+    font-weight: 600px;
+}
+
+
+.exclusive-container{
+    color: #fff;
+    flex-direction: row-reverse;
+    padding: 5rem 1rem;
+}
+
+.excluseve-container img{
+    max-width: 500px;
 }
