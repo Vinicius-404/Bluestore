@@ -90,18 +90,19 @@ header{
 }
 
 .header-bottom-side-left{
-    height: 100%;
+    height: 120%;
     flex-basis: 50%;
 }
 
 .header-bottom-side-left h2{
-    font-size: 3.2rem;
+    font-size: 4rem;
     margin-bottom: 1.5rem;
 }
 
 .header-bottom-side-left p{
     line-height: 1.5rem;
     margin-bottom: 1.5rem;
+    font-size: 1.3rem;
 }
 
 .header-bottom-side-left button{
@@ -112,7 +113,7 @@ header{
     border-radius: 9999px;
     color: #fff;
     font-weight: 500;
-    font-size: 1rem;
+    font-size: 1.3rem;
     transition: all 0.2s;
 }
 
@@ -223,7 +224,7 @@ main{
 .section-title{
     text-align: center;
     margin-top: 4rem;
-    font-size: 1.8rem;
+    font-size: 2rem;
 }
 
 .subtitle-underline{
@@ -243,8 +244,9 @@ main{
 }
 
 .produtos-nome{
-    font-weight: 600;
-    margin-top: 0.4;
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-top: 1rem;
 }
 
 .rate{
@@ -281,4 +283,73 @@ main{
     .cols-4{
         grid-template-columns: repeat(2, 1fr);
     }
+
+    .produtos-nome, .produtos-price, .rate{
+        max-height: 1rem;
+        overflow: hidden;
+        font-size: 0.8rem;
+    }
+
+    .exclusive-container{
+        flex-direction: column-reverse;
+    
+    }
+
+    .excluseve-container img{
+        margin-bottom: 4rem;
+    }
+}
+
+
+/*Comentario*/
+.comentario{
+    display: flex;
+    padding: 4rem 3rem;
+    justify-content: space-evenly;
+}
+
+/*comentarios*/
+.comentarioss{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-basis: 30%;
+    text-align: center;
+    box-shadow: 0 0 15px #afafaf;
+    padding: 1rem;
+    border-radius: 1rem;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+.comentarioss:hover{
+    transform: translateY(-5px);
+}
+
+.comentarioss p{
+    margin: 5px 0;
+}
+
+.comentarioss p:first-child{
+    font-weight: bold;
+    font-size: 5rem;
+    color: #0084ff;
+    margin-top: 3rem;
+    line-height: 2rem;
+}
+
+.comentarioss p:last-child{
+    font-size: bold;
+}
+
+
+@media (max-width: 800px){
+    .comentario{
+        flex-direction: column;
+    }
+    
+   .comentarioss{
+    margin-bottom: 1.2rem;
+   }
+
 }
